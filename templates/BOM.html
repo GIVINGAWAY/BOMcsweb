@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bank Of Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/BOMstyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  $( document ).ready(function() {
+	    $(".home").css("min-height", (window.innerHeight-100)+"px");
+	});
+  $(window).on('resize', function(){
+	  $(".home").css("min-height", (window.innerHeight-100)+"px");
+});
+
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse upper">
+<ul class="nav navbar-nav">
+        <li><img class="logo" width="50px" height="50px" src="/static/BOMimages/bank_of_me_assets/bankofme_small.png" alt="logo" class="" /></li>
+        <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+      </ul>
+      <ul class="right-menu">
+      <li><a href="#"><span class="glyphicon glyphicon-pencil"></span></a></li>
+      <li class="rightsearch"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-phone"></span></a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+      
+      
+      </ul>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavba">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+</nav>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="collapses navbar-collapses" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="chat-space">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                <button type="button" class="btn-default chatbtn glyphicon glyphicon-facetime-video"> Video call</button>
+                    <span class="glyphicon glyphicon-comment"></span> Chat
+                    <div class="btn-group pull-right">
+                        
+                        <ul class="dropdown-menu slidedown">
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-refresh">
+                            </span>Refresh</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-ok-sign">
+                            </span>Available</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-remove">
+                            </span>Busy</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-time"></span>
+                                Away</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-off"></span>
+                                Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="chat">
+                        <li class="left clearfix"><span class="chat-img pull-left">
+                            <img src="/static/BOMimages/agent_assets/agent_chat.png" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Joe</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix"><span class="chat-img pull-right">
+                            <img src="/static/BOMimages/customer_assets/customer_chat.png" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                    <strong class="pull-right primary-font">You</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="left clearfix"><span class="chat-img pull-left">
+                            <img src="/static/BOMimages/agent_assets/agent_chat.png" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Joe</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix"><span class="chat-img pull-right">
+                            <img src="/static/BOMimages/customer_assets/customer_chat.png" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
+                                    <strong class="pull-right primary-font">You</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                <div class="input-group">
+                <span class="send-options glyphicon glyphicon-folder-open"></span>
+                <span class="send-options glyphicon glyphicon-camera"></span>
+                </div>
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                SEND MESSAGE</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+  
+<div class="container home">
+<div class="message">
+  <h3>get your student bank account in minutes!</h3>
+  <p>Save time by using your camera phone to send us a proof of address and a selfie.</p>
+  <p>We'll also need your UCAS student number, so make sure you have it to hand.</p>
+</div>
+<div class="btngroup">
+<button type="button" class="btn btn-default danger">video call</button>
+<button id="live_chat" type="button" class="btn btn-default transparent">live chat</button>
+<br/>
+<button type="button" class="btn btn-default transparent">visit branch</button>
+</div>
+</div>
+<script>
+$("#live_chat").click(function(){
+	if ($(".chat-space").css("display")=="none") {
+		$(".chat-space")
+		  .css('opacity', 0)
+		  .slideDown(1000)
+		  .animate(
+		    { opacity: 1 },
+		    { queue: false, duration: 1600 }
+		  );	
+	} else {
+		$(".chat-space")
+		  .css('opacity', 1)
+		  .animate(
+		    { opacity: 0 },
+		    { queue: false, duration: 1300 }
+		  
+		  )
+		  .slideUp(2000)
+	}
+	
+});
+</script>
+</body>
+</html>
