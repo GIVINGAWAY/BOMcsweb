@@ -1,3 +1,14 @@
+body {
+	overflow-y: scroll;
+	font-family:'Open Sans', sans-serif;
+	min-width: 320px;
+}
+#myNavbar .glyphicon {
+	margin-bottom: 2px;
+    font-size: 16px;
+    display:block;
+    text-align:center;
+}
 .chat
 {
     list-style: none;
@@ -36,6 +47,7 @@
 
 .panel-body
 {
+	background: rgb(226, 236, 243);
     overflow-y: scroll;
     height: 250px;
 }
@@ -58,6 +70,7 @@
     background-color: #555;
 }
 .home {
+	border-top: 1px solid white;
 	min-height: 600px;
     height: auto !important;
 	width: 100%;
@@ -74,6 +87,9 @@
 	width: 90%;
 	margin: 0 auto;
 }
+.message p {
+	font-weight: 100;
+}
 .btngroup {
 	padding: 5px;
 	background: none;
@@ -82,7 +98,10 @@
 	margin: 30px auto;
 }
 h3 {
-	font-weight: 300;
+    margin-top: 9px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 200;
     text-transform: capitalize;
 }
 .btn-default {
@@ -176,13 +195,21 @@ h3 {
 }
 .send-options {
 	color: rgb(239, 109, 184);
-    padding: 7px;
+    padding: 10px;
 	margin:5px;
 	display: inline-block;
-	width: 30px;
-    height: 30px;
+	width: 40px;
+    height: 40px;
     border: 1px solid rgb(239, 109, 184);
     border-radius: 50%;
+    font-size:19px;
+}
+.input-group-left {
+	width:20%
+}
+.input-group-right {
+	width: 67%;
+	padding-top: 6px;
 }
 .panel-footer {
     width: 100%;
@@ -209,15 +236,16 @@ h3 {
     color: black;
 }
 .right-menu {
-	width: 192px;
+	font-size: 20px;
+	width: 200px;
     float:right;
-    padding-top: 15px;
+    padding-top: 12px;
 }
 .right-menu li{
 	display:inline-block;
 	float:right;
 	width:30px;
-    margin:0 auto;
+    margin: 0 5px;
 }
 .right-menu .glyphicon {
 	color:grey;
@@ -229,7 +257,35 @@ h3 {
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #BBBABA;
 }
+#btn-input, #btn-chat {
+	height:40px;
+}
+#btn-chat {
+	padding: 0 10px;
+	margin-left: 35px;
+	border-radius:5px;
+}
+@media (min-width: 769px) {
+	#btn-chat:before {
+    content:"SEND MESSAGE";
+    font-weight: 100;
+	}
+}
 @media (max-width: 768px) {
+#btn-chat {
+	border-radius: 50%;
+    margin-left: 20px;
+	width:40px;
+}
+#btn-chat:before {
+    content:"\2709";
+    font-size: 27px;
+}
+	.input-group-right {
+    width: 60%;
+    margin: 0 auto;
+    float: none;
+}
 	.input-group:nth-child(1) {
 	width:100%;
 	margin:0 auto;
@@ -237,10 +293,11 @@ h3 {
 	}
 	.send-options {
 	margin: 1px 40px 12px;
-	padding-top: 15px;
+	padding: 10px;
 	color: rgb(239, 109, 184);
-	width: 50px;
-    height: 50px;
+	width: 40px;
+    height: 40px;
+    font-size: 19px;
 	}
 	.right-menu {
 	display:none;
